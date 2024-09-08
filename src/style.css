@@ -1,1 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6e6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  max-width: 700px;
+  margin: 100px auto;
+}
+header {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.input-element {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 0.5rem;
+  border: none;
+  background-color: #b3fdac2d;
+  font-size: 1rem;
+}
+.input-btn {
+  padding: 15px;
+  margin-left: 0.5rem;
+  border: none;
+  background-color: #bcee6c;
+  font-size: 1rem;
+}
+small {
+  color: #3a3a3a8c;
+  margin-left: 0.5rem;
+}
+
+main {
+  background-color: white;
+  padding: 40px 30px;
+  border-left: 3px solid #bcee6c;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  font-size: 1rem;
+}
+strong {
+  color: #213600;
+  cursor: pointer;
+}
+a {
+  color: #5e9900;
+  &:active {
+    color: #426b00;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+/* xs */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .input-element {
+    width: 40%;
+
+    font-size: 10px;
+  }
+  .input-btn {
+    font-size: 10px;
+  }
+  main {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 600px;
+  }
+  header {
+    padding: 30px 15px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-element {
+    width: 60%;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .input-btn {
+    font-size: 12px;
+    padding: 10;
+  }
+  main {
+    padding: 30px 15px;
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .input-element {
+    width: 80%;
+    padding: 15px;
+  }
+  .input-btn {
+    padding: 15px;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1200px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
