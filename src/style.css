@@ -61,13 +61,14 @@ small {
   display: none;
 }
 
-main {
+.fact {
   background-color: white;
   padding: 40px 30px;
   border-left: 3px solid #bcee6c;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   font-size: 1rem;
   border-radius: 10px;
+  line-height: 1.5;
 }
 strong {
   color: #213600;
@@ -125,7 +126,7 @@ footer {
   small {
     font-size: 0.7rem;
   }
-  main {
+  .fact {
     padding: 30px 15px;
     font-size: 0.9rem;
   }
@@ -136,7 +137,22 @@ footer {
 
 /* xs */
 @media (max-width: 500px) {
-  main {
+  .fact {
     font-size: 0.8rem;
+  }
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
